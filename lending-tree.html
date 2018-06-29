@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11792,8 +11790,7 @@ div#notebook {
 <form action="javascript:code_toggle()">
   <input type="submit" id="toggleButton" value="Show Code">
 </form>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11801,8 +11798,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11810,20 +11806,18 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We approach this analysis from a perspective of an accredited or institutional investors, whose interests are maximizing risk-adjusted returns. Exploratory data analysis reveals that the market is growing at a healthy clip which is a positive factor for these investors who have liquidity needs. We also see that at an individual security level, these loans are highly volatile- making it a bad risk-adjusted investment without proper diversification. Constructing a portfolio of loans showed that an investor can effectively diversify out the risk from the default rate.</p>
 <p>We then explore how we can generate alpha in our loan seletion criteria. We split our data into training and test sets, and build a prediction model, a simple approach using linear regression. Collecting top 1000 from our model's prediction in a test set dramatically outperformed 1000 randomly selected loans by as much as 5.6% in IRR. This was a suprising result given our R2 of the model was very low. However, that is understandable since return distribution in this asset class is very polarized. Any modeling that yields a point estimate is going to perform badly on paper since the real data will either overshoot(fully paid) or undershoot(default) but when you spread out the defaut rate, on average, our model fared well in extracting useful information out of the features.</p>
-<p>We acknowledge that our model can have a look ahead bias, training our model using data that we would other wise not have at the time. I recommend considering a buy-hold-sell strategy leveraging the marketplace. This way, we can use data for example, 6 months and older to build a model for 6 month holding strategy. I also recommend exploring more rigorous forecasting methods,d improving the code so it can scale better with growing market data and implementing unit testing.</p>
+<p>We acknowledge that our model can have a look ahead bias, training our model using data that we would other wise not have at the time. I recommend considering a buy-hold-sell strategy leveraging the marketplace. This way, we can use data for example, 6 months and older to build a model for 6 month holding strategy. I also recommend exploring more rigorous forecasting methods, improving the code so it can scale better with growing market data, and implementing unit testing.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11831,8 +11825,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11887,8 +11880,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11978,8 +11970,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11987,8 +11978,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11996,8 +11986,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12081,8 +12070,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12109,7 +12097,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[53]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12400,8 +12390,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12429,8 +12418,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12460,7 +12448,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -12697,8 +12687,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12711,8 +12700,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12735,8 +12723,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12763,7 +12750,9 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[54]:</div>
+
 
 
 
@@ -12777,8 +12766,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12787,8 +12775,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12846,7 +12833,9 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[59]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13241,8 +13230,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13255,8 +13243,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13283,7 +13270,9 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[60]:</div>
+
 
 
 
@@ -13297,8 +13286,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13324,7 +13312,9 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[64]:</div>
+
 
 
 
@@ -13381,8 +13371,7 @@ dtype: float64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13391,8 +13380,7 @@ dtype: float64</pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13400,8 +13388,7 @@ dtype: float64</pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13484,8 +13471,7 @@ dtype: float64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13513,7 +13499,9 @@ and our method randomizes across time but there are smaller number of earlier lo
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[65]:</div>
+
 
 
 
@@ -13551,7 +13539,9 @@ and our method randomizes across time but there are smaller number of earlier lo
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13856,8 +13846,7 @@ EHojfr8AAAAXSURBVEKIPJPiIYQQIs+keAghhMiz/wOEohnLTYO29AAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13909,7 +13898,9 @@ EHojfr8AAAAXSURBVEKIPJPiIYQQIs+keAghhMiz/wOEohnLTYO29AAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -14268,8 +14259,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14282,8 +14272,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14291,8 +14280,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14300,8 +14288,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14314,8 +14301,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14342,7 +14328,9 @@ EEOrAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[69]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14633,8 +14621,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14645,8 +14632,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14672,7 +14658,9 @@ EEOrAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[70]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -15067,8 +15055,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15080,8 +15067,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15111,7 +15097,9 @@ EEOrAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -15348,8 +15336,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15360,8 +15347,7 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15394,7 +15380,9 @@ RERMoYIRERFTqGBERMQUKhgRETHF/wPssUcNJgvSOQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -15753,8 +15741,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15766,8 +15753,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15792,7 +15778,9 @@ EEOrAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[73]:</div>
+
 
 
 
@@ -15806,8 +15794,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15832,7 +15819,9 @@ EEOrAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[74]:</div>
+
 
 
 
@@ -15846,8 +15835,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15855,8 +15843,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15864,8 +15851,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15912,8 +15898,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15921,8 +15906,7 @@ EEOrAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15953,7 +15937,9 @@ EEOrAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>                            OLS Regression Results                            
@@ -15989,8 +15975,7 @@ Warnings:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16034,7 +16019,9 @@ Warnings:
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>                            OLS Regression Results                            
@@ -16091,7 +16078,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff          F        Pr(&gt;F)
@@ -16105,8 +16094,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16129,8 +16117,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16173,7 +16160,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff        F        Pr(&gt;F)
@@ -16255,7 +16244,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff         F    Pr(&gt;F)
@@ -16269,8 +16260,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16279,8 +16269,7 @@ strong multicollinearity or other numerical problems.
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16336,7 +16325,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff          F        Pr(&gt;F)
@@ -16350,8 +16341,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16395,7 +16385,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff         F    Pr(&gt;F)
@@ -16409,8 +16401,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16442,7 +16433,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid         ssr  df_diff  ss_diff       F    Pr(&gt;F)
@@ -16456,8 +16449,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16502,7 +16494,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff         F    Pr(&gt;F)
@@ -16516,8 +16510,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16562,7 +16555,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff          F        Pr(&gt;F)
@@ -16576,8 +16571,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16622,7 +16616,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff          F        Pr(&gt;F)
@@ -16636,8 +16632,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16668,7 +16663,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>   df_resid          ssr  df_diff   ss_diff         F    Pr(&gt;F)
@@ -16682,8 +16679,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16709,7 +16705,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[160]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16788,8 +16786,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16806,8 +16803,7 @@ strong multicollinearity or other numerical problems.
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16885,7 +16881,9 @@ strong multicollinearity or other numerical problems.
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[164]:</div>
+
 
 
 
@@ -16899,8 +16897,7 @@ strong multicollinearity or other numerical problems.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16910,8 +16907,7 @@ Also as shown in summary above, R^2 is very low at .07.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16934,8 +16930,7 @@ Also as shown in summary above, R^2 is very low at .07.</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16961,7 +16956,9 @@ Also as shown in summary above, R^2 is very low at .07.</p>
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[167]:</div>
+
 
 
 
@@ -16975,8 +16972,7 @@ Also as shown in summary above, R^2 is very low at .07.</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17003,7 +16999,9 @@ Also as shown in summary above, R^2 is very low at .07.</p>
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[168]:</div>
+
 
 
 
@@ -17017,8 +17015,7 @@ Also as shown in summary above, R^2 is very low at .07.</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17055,7 +17052,9 @@ Also as shown in summary above, R^2 is very low at .07.</p>
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -17436,8 +17435,7 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17447,8 +17445,7 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17460,8 +17457,7 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17469,8 +17465,7 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17548,7 +17543,9 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[230]:</div>
+
 
 
 
@@ -17579,7 +17576,9 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[231]:</div>
+
 
 
 
@@ -17610,7 +17609,9 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[232]:</div>
+
 
 
 
@@ -17641,7 +17642,9 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[233]:</div>
+
 
 
 
@@ -17696,7 +17699,9 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -18250,8 +18255,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18260,8 +18264,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18269,8 +18272,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18278,8 +18280,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18302,8 +18303,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18328,7 +18328,9 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[170]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -18407,8 +18409,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18417,8 +18418,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18427,8 +18427,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18436,8 +18435,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18463,7 +18461,9 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[172]:</div>
+
 
 
 
@@ -18477,8 +18477,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18504,7 +18503,9 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[173]:</div>
+
 
 
 
@@ -18518,8 +18519,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18556,7 +18556,9 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -18937,8 +18939,7 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -18988,7 +18989,9 @@ i4niIQiCIFjsfwBlwJe/khqbFQAAAABJRU5ErkJggg==
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -19542,8 +19545,7 @@ CiMhhBBCiGZSGAkhhBBCNJPCSAghhBCimRRGQgghhBDN/j9ljdjOXfOsagAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">

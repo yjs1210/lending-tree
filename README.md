@@ -26,7 +26,7 @@ We approach this analysis from a perspective of an accredited or institutional i
 
 We then explore how we can generate alpha in our loan seletion criteria. We split our data into training and test sets, and build a prediction model, a simple approach using linear regression. Collecting top 1000 from our model's prediction in a test set dramatically outperformed 1000 randomly selected loans by as much as 5.6% in IRR. This was a suprising result given our R2 of the model was very low. However, that is understandable since return distribution in this asset class is very polarized. Any modeling that yields a point estimate is going to perform badly on paper since the real data will either overshoot(fully paid) or undershoot(default) but when you spread out the defaut rate, on average, our model fared well in extracting useful information out of the features.
 
-We acknowledge that our model can have a look ahead bias, training our model using data that we would other wise not have at the time. I recommend considering a buy-hold-sell strategy leveraging the marketplace. This way, we can use data for example, 6 months and older to build a model for 6 month holding strategy. I also recommend exploring more rigorous forecasting methods,d improving the code so it can scale better with growing market data and implementing unit testing.
+We acknowledge that our model can have a look ahead bias, training our model using data that we would other wise not have at the time. I recommend considering a buy-hold-sell strategy leveraging the marketplace. This way, we can use data for example, 6 months and older to build a model for 6 month holding strategy. I also recommend exploring more rigorous forecasting methods, improving the code so it can scale better with growing market data, and implementing unit testing.
 
 ## Data Cleaning & Environment Set Up
 
@@ -112,7 +112,7 @@ df.head()[['loan_status','loan_completion_flag','fully_paid']]
 
 ### Calculations & Assumptions
 
-We calculate the return of a loan by looking at the IRR of its cash flows. We make an assumption that (total payment - recoveries - last payment) are spread evenly aross the life of the loan(last payment - issue date) -1 month. We net out the last payment to account for edge cases such as when a lender prepays with a big lump sum. We should not be discounting these cash flows earlier than they occur. 
+We calculate the return of a loan by looking at the IRR of its cash flows. We make an assumption that (total payment - recoveries - last payment) are spread evenly across the life of the loan(last payment - issue date) -1 month. We net out the last payment to account for edge cases such as when a lender prepays with a big lump sum. We should not be discounting these cash flows earlier than they occur. 
 
 For most loans, this treatment is almost identical to installment payments. We then add back in the last payment amount. For recoveries, we make an assumption that it will take on average rest of the maturity of the loan + 1 year to recover. So any recovery and recovery collection fees are spread across the remaining duration of 36 month life of the loan plus additional 12 months. We give heavier penalties to loans that default earlier essentially. We, then calculate the IRR of these series of cashflows. 
 
